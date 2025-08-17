@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learning Path</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
         <div class="learner-page">
-            <h1 class="header">Choose Your Carrier </h1><br>
+            <h1 class="header">Choose Your Career </h1><br>
             <p class="header-description">Explore structured learning paths designed to guide you step-by-step into your
                 dream tech career.
                 Whether you want to be a web developer, app creator, data scientist, or software engineer,
@@ -21,36 +21,42 @@
         <div class="carts">
             <div class="cart">
                 <h2 class="cart-header">Web Development</h2><br>
-                <p class="cart-description">Building and maintaining websites and web applications using frontend, backend, and databases. </p>
+                <p class="cart-description">Building and maintaining websites and web applications using frontend,
+                    backend, and databases. </p>
                 <button class="cart-button">See Complete Road map</button>
             </div>
             <div class="cart">
                 <h2 class="cart-header">App Development</h2><br>
-                <p class="cart-description">Create mobile and desktop applications that are fast, responsive, and user-friendly. </p><br>
+                <p class="cart-description">Create mobile and desktop applications that are fast, responsive, and
+                    user-friendly. </p><br>
                 <button class="cart-button">See Complete Road map</button>
             </div>
 
             <div class="cart">
                 <h2 class="cart-header">Data Analysis</h2><br>
-                <p class="cart-description">Inspecting and interpreting data to find insights that support decision-making. </p><br>
+                <p class="cart-description">Inspecting and interpreting data to find insights that support
+                    decision-making. </p><br>
                 <button class="cart-button">See Complete Road map</button>
             </div>
             <div class="cart">
-                <h2 class="cart-header">AI Development</h2><br>
-                <p class="cart-description">Learn complete about Website Building </p><br>
+                <h2 class="cart-header">AIML</h2><br>
+                <p class="cart-description">Learn how machines can think, learn, and solve problems using data, algorithms, and intelligent models. </p>
                 <button class="cart-button">See Complete Road map</button>
             </div>
 
-            <div class="cart">
+            <!-- <div class="cart">
                 <h2 class="cart-header">AI Development</h2><br>
                 <p class="cart-description">Learn complete about Website Building </p><br>
                 <button class="cart-button">See Complete Road map</button>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <!--For web devlopment -->
     <div id="web-roadmap">
+        <div class="back-button">
+            <a href="#" class="back-link">->Back</a>
+        </div>
         <div class="course-description">
             <h1>Web Development</h1><br>
             <p class="p-web-description">Web development is the process of building and maintaining websites and web
@@ -65,12 +71,8 @@
         </div>
 
         <svg class="roadmap-svg" viewBox="0 0 1000 330">
-            <!-- Background road segments -->
             <path class="road-segment" style="fill: white"
                 d="M 80 250 Q 200 200 300 250 Q 400 300 500 250 Q 600 200 700 250" /> <!--Q 800 300 920 250 />-->
-
-            <!-- Progress path (completed sections) -->
-            <!-- <path class="progress-path" d="M 80 250 Q 200 200 300 250 Q 400 300 500 250" /> -->
 
             <!-- Milestone markers -->
             <line x1="80" y1="200" x2="80" y2="300" stroke="#34495e" stroke-width="2" />
@@ -79,45 +81,33 @@
             <line x1="700" y1="200" x2="700" y2="300" stroke="#34495e" stroke-width="2" />
             <!-- <line x1="920" y1="200" x2="920" y2="300" stroke="#34495e" stroke-width="2" /> -->
 
-            <!-- Node 1: Project Planning (Completed) -->
-            <g class="completed" data-node="1">
+            <!-- Node 1: -->
+            <g class="completed" web-node="1">
                 <circle class="node-circle" cx="80" cy="250" r="20" />
-                <text class="node-text" x="80" y="255" style="color:white">1</text>
+                <text class="node-text-num" x="80" y="255" style="color:white">1</text>
                 <text class="node-text" x="80" y="180">Frontend(Client Side)</text>
-                <!-- <text class="node-description" x="80" y="195">Requirements & Design</text> -->
             </g>
 
-            <!-- Node 2: Setup & Configuration (Completed) -->
-            <g class="completed" data-node="2">
+            <!-- Node 2:  -->
+            <g class="completed" web-node="2">
                 <circle class="node-circle" cx="300" cy="250" r="20" />
-                <text class="node-text" x="300" y="255">2</text>
+                <text class="node-text-num" x="300" y="255">2</text>
                 <text class="node-text" x="300" y="180">Backend(server Side)</text>
-                <!-- <text class="node-description" x="300" y="195">Environment Setup</text> -->
             </g>
 
-            <!-- Node 3: Core Development (Current) -->
-            <g data-node="3">
-                <circle class="node-circle" cx="500" cy="250" r="25" />
-                <text class="node-text" x="500" y="257">3</text>
+            <!-- Node 3:-->
+            <g web-node="3">
+                <circle class="node-circle" cx="500" cy="250" r="20" />
+                <text class="node-text-num" x="500" y="257">3</text>
                 <text class="node-text" x="500" y="180">Database</text>
-                <!-- <text class="node-description" x="500" y="195">Main Features</text> -->
             </g>
 
-            <!-- Node 4: Testing & QA -->
-            <g data-node="4">
+            <!-- Node 4: -->
+            <g web-node="4">
                 <circle class="node-circle" cx="700" cy="250" r="20" />
-                <text class="node-text" x="700" y="255">4</text>
+                <text class="node-text-num" x="700" y="255">4</text>
                 <text class="node-text" x="700" y="180">Version Control Tools</text>
-                <!-- <text class="node-description" x="700" y="335">Quality Assurance</text> -->
             </g>
-
-            <!-- Node 5: Deployment -->
-            <!-- <g data-node="5">
-                <circle class="node-circle" cx="920" cy="250" r="20" />
-                <text class="node-text" x="920" y="255">5</text>
-                <text class="node-text" x="920" y="180">Deployment</text>
-                <text class="node-description" x="920" y="195">Go Live!</text>
-            </g> -->
         </svg>
     </div>
 
@@ -136,82 +126,83 @@
 
 
             <h2>CSS Tools & Frameworks</h2>
-            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
                 <li>Bootstrap</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/css/tailwind-css/" target="_blank" class="detail-link">
                 <li>Tailwind CSS</li>
             </a>
 
             <h2>JavaScript Frameworks & Libraries</h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
                 <li>React.js</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/angular/" target="_blank" class="detail-link">
                 <li>Angular.js</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/vue/" target="_blank" class="detail-link">
                 <li>vue.js</li>
             </a>
         </div>
         <div id="backend-list" class="lists">
             <h2>Languages</h2>
-            <a href="https://www.w3schools.com/html/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/nodejs/" target="_blank" class="detail-link">
                 <li>JavaScript(Node.js)</li>
             </a>
-            <a href="https://www.w3schools.com/Css/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/django/" target="_blank" class="detail-link">
                 <li>Python(Django,Flask,FastAPI)</li>
             </a>
-            <a href="https://www.w3schools.com/js/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/advance-java/spring-boot/" target="_blank" class="detail-link">
                 <li>Java(Spring Boot)</li>
             </a>
-            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/php/" target="_blank" class="detail-link">
                 <li>PHP(Laravel, CodeIgniter)</li>
             </a>
 
             <h2>Frameworks / Runtimes</h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/nodejs/" target="_blank" class="detail-link">
                 <li>Node.js → Express.js, NestJS, Hapi.js</li>
             </a>
 
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/django/" target="_blank" class="detail-link">
                 <li>Python → Django, Flask, FastAPI</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/advance-java/spring-boot/" target="_blank" class="detail-link">
                 <li>Java → Spring, Spring Boot</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/php/" target="_blank" class="detail-link">
                 <li>PHP → Laravel, Symfony, CodeIgniter</li>
             </a>
         </div>
 
         <div id="Database-list" class="lists">
             <h2>Relational Database</h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/sql/" target="_blank" class="detail-link">
                 <li>MySQL</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/postgresql/" target="_blank" class="detail-link">
                 <li>PostgreSQL</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/dbms/oracle-database-an-introduction/" target="_blank"
+                class="detail-link">
                 <li>Oracle Database</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/sqlite/sqlite-tutorial/" target="_blank" class="detail-link">
                 <li>SQLite</li>
             </a>
 
             <h2>NoSQL Database</h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/mongodb/" target="_blank" class="detail-link">
                 <li>MongoDB (Document-based)</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#" target="_blank" class="detail-link">
                 <li>Cassandra (Column-based)</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#" target="_blank" class="detail-link">
                 <li>Redis (Key-value store, in-memory)</li>
             </a>
 
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/dbms/neo4j-introduction/" target="_blank" class="detail-link">
                 <li>Neo4j (Graph database)</li>
             </a>
 
@@ -219,13 +210,13 @@
 
         <div id="versionControl-list" class="lists">
             <h2>Git Based </h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#" class="detail-link">
                 <li>Git(Core System)</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#" class="detail-link">
                 <li>GitHub → Cloud hosting for Git repos, collaboration, CI/CD</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#"  class="detail-link">
                 <li>GitLab → Git hosting + built-in DevOps tools</li>
             </a>
         </div>
@@ -242,6 +233,9 @@
 
     <!--For App Development-->
     <div id="app-roadmap">
+        <div class="back-button">
+            <a href="#" class="back-link">->Back</a>
+        </div>
         <div class="course-description">
             <h1>App Development</h1><br>
             <p>App development focuses on building applications for mobile devices (Android & iOS) or desktop platforms.
@@ -255,12 +249,9 @@
         </div>
 
         <svg class="roadmap-svg" viewBox="0 0 1000 330">
-            <!-- Background road segments -->
             <path class="road-segment" style="fill: white"
-                d="M 80 250 Q 200 200 300 250 Q 400 300 500 250 Q 600 200 700 250" /> <!--Q 800 300 920 250 />-->
+                d="M 80 250 Q 200 200 300 250 Q 400 300 500 250 Q 600 200 700 250" /> <!--Q 800 300 920 250-->
 
-            <!-- Progress path (completed sections) -->
-            <!-- <path class="progress-path" d="M 80 250 Q 200 200 300 250 Q 400 300 500 250" /> -->
 
             <!-- Milestone markers -->
             <line x1="80" y1="200" x2="80" y2="300" stroke="#34495e" stroke-width="2" />
@@ -269,45 +260,34 @@
             <line x1="700" y1="200" x2="700" y2="300" stroke="#34495e" stroke-width="2" />
             <!-- <line x1="920" y1="200" x2="920" y2="300" stroke="#34495e" stroke-width="2" /> -->
 
-            <!-- Node 1: Project Planning (Completed) -->
-            <g class="completed" data-node="1">
+            <!-- Node 1:-->
+            <g class="completed" app-node="1">
                 <circle class="app-circle" cx="80" cy="250" r="20" />
                 <text class="node-text" x="80" y="255" style="color:white">1</text>
                 <text class="node-text" x="80" y="180">Languages</text>
-                <!-- <text class="node-description" x="80" y="195">Learn the core programming and UI basics.</text> -->
             </g>
 
-            <!-- Node 2: Setup & Configuration (Completed) -->
-            <g class="completed" data-node="2">
+            <!-- Node 2: -->
+            <g class="completed" app-node="2">
                 <circle class="app-circle" cx="300" cy="250" r="20" />
                 <text class="node-text" x="300" y="255">2</text>
                 <text class="node-text" x="300" y="180">Native App Developmenttext</text>
-                <!-- <text class="node-description" x="300" y="195">Environment Setup</text> -->
             </g>
 
-            <!-- Node 3: Core Development (Current) -->
-            <g data-node="3">
-                <circle class="app-circle milestone" cx="500" cy="250" r="25" />
+            <!-- Node 3:-->
+            <g app-node="3">
+                <circle class="app-circle milestone" cx="500" cy="250" r="20" />
                 <text class="node-text" x="500" y="257">3</text>
                 <text class="node-text" x="500" y="320">Cross-Platform App Development</text>
 
             </g>
 
-            <!-- Node 4: Testing & QA -->
-            <g data-node="4">
+            <!-- Node 4: -->
+            <g app-node="4">
                 <circle class="app-circle" cx="700" cy="250" r="20" />
                 <text class="node-text" x="700" y="255">4</text>
                 <text class="node-text" x="700" y="200">Backend for Apps</text>
-                <!-- <text class="node-description" x="700" y="335">Quality Assurance</text> -->
             </g>
-
-            <!-- Node 5: Deployment -->
-            <!-- <g data-node="5">
-                <circle class="node-circle" cx="920" cy="250" r="20" />
-                <text class="node-text" x="920" y="255">5</text>
-                <text class="node-text" x="920" y="180">Deployment</text>
-                <text class="node-description" x="920" y="195">Go Live!</text>
-            </g> -->
         </svg>
     </div>
 
@@ -315,59 +295,48 @@
         <!--Node 1-->
         <div id="app-Languages-list" class="lists">
             <h2>Learn the core programming and UI basics. Choose one Language</h2>
-            <a href="https://www.w3schools.com/html/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/js/" target="_blank" class="detail-link">
                 <li>JavaScript (web & cross-platform apps)</li>
             </a>
-            <a href="https://www.w3schools.com/Css/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/java/" target="_blank" class="detail-link">
                 <li>Java (Android)</li>
             </a>
-            <a href="https://www.w3schools.com/js/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/kontlin/" target="_blank" class="detail-link">
                 <li>Kotlin (modern Android) </li>
             </a>
-
-
-            <!-- <h2>CSS Tools & Frameworks</h2> -->
-            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+            <a href="https://developer.apple.com/tutorials/swiftui/" target="_blank" class="detail-link">
                 <li>Swift (iOS)</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/cs/" target="_blank" class="detail-link">
                 <li>C# (Xamarin, MAUI)</li>
             </a>
-
-            <!-- <h2>JavaScript Frameworks & Libraries</h2> -->
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#" class="detail-link">
                 <li>Dart (Flutter)</li>
             </a>
-            <!-- <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
-                <li>Angular.js</li>
-            </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
-                <li>vue.js</li>
-            </a> -->
         </div>
 
         <!--Node 2-->
         <div id="native-app-list" class="lists">
             <h2>Android(Native)</h2>
-            <a href="https://www.w3schools.com/html/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/kotlin/" target="_blank" class="detail-link">
                 <li>Languages: Kotlin, Java</li>
             </a>
-            <a href="https://www.w3schools.com/Css/" target="_blank" class="detail-link">
-                <li>Frameworks/SDKs: Android SDK, Jetpack Compose (modern UI toolkit)li>
+            <a href="#" class="detail-link">
+                <li>Frameworks/SDKs: Jetpack Compose (modern UI toolkit)li>
             </a>
-            <a href="https://www.w3schools.com/js/" target="_blank" class="detail-link">
+            <a href="https://developer.android.com/" target="_blank" class="detail-link">
                 <li>Tools: Android Studio, Gradle</li>
             </a>
 
             <h2>ios(Native)</h2>
-            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+            <a href="#" target="_blank" class="detail-link">
                 <li>Languages: Swift (modern), Objective-C (legacy)</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#"  class="detail-link">
                 <li>Frameworks/SDKs: SwiftUI (modern UI toolkit), UIKit</li>
             </a>
 
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#"  class="detail-link">
                 <li>Tools: Xcode, CocoaPods, Swift Package Manager</li>
             </a>
         </div>
@@ -375,19 +344,19 @@
         <!--Node 3-->
         <div id="plateform-app-list" class="lists">
             <h2>Build apps for Android & iOS from a single codebase.</h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/flutter/flutter-tutorial/" target="_blank" class="detail-link">
                 <li>Flutter (Dart) → Most popular, fast UI</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.geeksforgeeks.org/react-native/react-native-tutorial/" target="_blank" class="detail-link">
                 <li>React Native (JavaScript/TypeScript) → Widely used by startups & companies</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#"  class="detail-link">
                 <li>Xamarin / .NET MAUI (C#) → Microsoft ecosystem</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#"  class="detail-link">
                 <li>Ionic (JavaScript/TypeScript + Angular/React/Vue) → Hybrid apps with web tech</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#" class="detail-link">
                 <li>NativeScript (JavaScript/TypeScript) → Direct native APIs</li>
             </a>
 
@@ -396,35 +365,48 @@
         <div id="backend-app-list" class="lists">
             <h4>Handle data, authentication, and cloud logic.</h4>
             <h2>Languages & Frameworks</h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/nodejs/" target="_blank" class="detail-link">
                 <li>Node.js + Express.js (JavaScript)</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/python/" target="_blank" class="detail-link">
                 <li>Python + Flask / Django / FastAPI</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/java/" target="_blank" class="detail-link">
                 <li>Java + Spring Boot</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/Go/" target="_blank" class="detail-link">
                 <li>Go + Gin/Fiber</li>
             </a>
 
             <h2>Databases</h2>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/sql/" target="_blank" class="detail-link">
                 <li>SQL: MySQL, PostgreSQL</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="https://www.w3schools.com/mongodb/" target="_blank" class="detail-link">
                 <li>JNoSQL: MongoDB, Firebase Firestore</li>
             </a>
-            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+            <a href="#" target="_blank" class="detail-link">
                 <li>Cloud Databases: Supabase, AWS DynamoDB</li>
             </a>
         </div>
     </div>
 
+    <!--App roadmap Video-->
+
+    <div class="video">
+        <iframe width="560" height="315" class="app-video"src="https://www.youtube.com/embed/7nQsQ0rvYqQ"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
     <!--For Data Analysis-->
 
     <div id="DataAnalysis-roadmap">
+        <div class="back-button">
+            <a href="#" class="back-link">->Back</a>
+        </div>
         <div class="course-description">
             <h1>Data Analysis</h1><br>
             <p>Data analysis is the practice of inspecting, cleaning, and modeling data to discover useful insights and
@@ -435,37 +417,30 @@
             </p>
         </div>
         <svg class="roadmap-svg" viewBox="0 0 1000 330">
-            <!-- Background road segments -->
             <path class="road-segment" style="fill: white"
                 d="M 80 250 Q 200 200 300 250 Q 400 300 500 250 Q 600 200 700 250" /> <!--Q 800 300 920 250 />-->
-
-            <!-- Progress path (completed sections) -->
-            <!-- <path class="progress-path" d="M 80 250 Q 200 200 300 250 Q 400 300 500 250" /> -->
 
             <!-- Milestone markers -->
             <line x1="80" y1="200" x2="80" y2="300" stroke="#34495e" stroke-width="2" />
             <line x1="300" y1="200" x2="300" y2="300" stroke="#34495e" stroke-width="2" />
             <line x1="500" y1="200" x2="500" y2="300" stroke="#34495e" stroke-width="2" />
             <line x1="700" y1="200" x2="700" y2="300" stroke="#34495e" stroke-width="2" />
-            <!-- <line x1="920" y1="200" x2="920" y2="300" stroke="#34495e" stroke-width="2" /> -->
 
-            <!-- Node 1: Project Planning (Completed) -->
+            <!-- Node 1:  -->
             <g class="completed" data-node="1">
                 <circle class="data-circle" cx="80" cy="250" r="20" />
                 <text class="node-text" x="80" y="255" style="color:white">1</text>
                 <text class="node-text" x="80" y="180">Basics</text>
-                <!-- <text class="node-description" x="80" y="195">Learn the core programming and UI basics.</text> -->
             </g>
 
-            <!-- Node 2: Setup & Configuration (Completed) -->
+            <!-- Node 2: -->
             <g class="completed" data-node="2">
                 <circle class="data-circle" cx="300" cy="250" r="20" />
                 <text class="node-text" x="300" y="255">2</text>
                 <text class="node-text" x="300" y="180">Data Handling & Cleaning</text>
-                <!-- <text class="node-description" x="300" y="195">Environment Setup</text> -->
             </g>
 
-            <!-- Node 3: Core Development (Current) -->
+            <!-- Node 3:  -->
             <g data-node="3">
                 <circle class="data-circle milestone" cx="500" cy="250" r="25" />
                 <text class="node-text" x="500" y="257">3</text>
@@ -473,25 +448,17 @@
 
             </g>
 
-            <!-- Node 4: Testing & QA -->
+            <!-- Node 4: -->
             <g data-node="4">
                 <circle class="data-circle" cx="700" cy="250" r="20" />
                 <text class="node-text" x="700" y="255">4</text>
                 <text class="node-text" x="700" y="200">Advanced Data Analysis</text>
-                <!-- <text class="node-description" x="700" y="335">Quality Assurance</text> -->
             </g>
-
-            <!-- Node 5: Deployment -->
-            <!-- <g data-node="5">
-                <circle class="node-circle" cx="920" cy="250" r="20" />
-                <text class="node-text" x="920" y="255">5</text>
-                <text class="node-text" x="920" y="180">Deployment</text>
-                <text class="node-description" x="920" y="195">Go Live!</text>
-            </g> -->
         </svg>
     </div>
-    <!--Node 1-->
+
     <div class="DataAnalysis-details" style="display: none;">
+        <!--Node 1-->
         <div id="Data-basic-list" class="lists">
             <p style="font-size:18px;">Build math, logic, and basic programming foundations.</p><br>
             <h2>Mathematics:</h2>
@@ -598,6 +565,207 @@
             </a>
             <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
                 <li>Hadoop (Hive, Pig)</li>
+            </a>
+        </div>
+    </div>
+
+
+    <!--For AIML Course-->
+    <div id="AIML-roadmap">
+        <div class="back-button">
+            <a href="#" class="back-link">->Back</a>
+        </div>
+        <div class="course-description">
+            <h1>Artificial Intelligence & Machine Learning (AIML)</h1><br>
+            <p>Learn how machines can think, learn, and make decisions like humans. This course covers the foundations
+                of machine learning, deep learning, natural language processing (NLP), and computer vision, along with
+                hands-on projects. Gain skills in Python, TensorFlow, PyTorch, and data handling to build intelligent
+                systems, chatbots, image recognition apps, and more.
+            </p>
+        </div>
+
+        <svg class="roadmap-svg" viewBox="0 0 1000 330">
+            <path class="road-segment" style="fill: white"
+                d="M 80 250 Q 200 200 300 250 Q 400 300 500 250 Q 600 200 700 250" /> <!--Q 800 300 920 250 />-->
+
+            <!-- Milestone markers -->
+            <line x1="80" y1="200" x2="80" y2="300" stroke="#34495e" stroke-width="2" />
+            <line x1="300" y1="200" x2="300" y2="300" stroke="#34495e" stroke-width="2" />
+            <line x1="500" y1="200" x2="500" y2="300" stroke="#34495e" stroke-width="2" />
+            <line x1="700" y1="200" x2="700" y2="300" stroke="#34495e" stroke-width="2" />
+
+            <!-- Node 1:  -->
+            <g class="completed" AIML-node="1">
+                <circle class="AIML-circle" cx="80" cy="250" r="20" />
+                <text class="node-text-num" x="80" y="255" style="color:white">1</text>
+                <text class="node-text" x="80" y="180"> Foundations</text>
+            </g>
+
+            <!-- Node 2: -->
+            <g class="completed" AIML-node="2">
+                <circle class="AIML-circle" cx="300" cy="250" r="20" />
+                <text class="node-text-num" x="300" y="255">2</text>
+                <text class="node-text" x="300" y="180">Core Machine Learning</text>
+            </g>
+
+            <!-- Node 3:  -->
+            <g class="completed" AIML-node="3">
+                <circle class="AIML-circle" cx="500" cy="250" r="25" />
+                <text class="node-text-num" x="500" y="257">3</text>
+                <text class="node-text" x="500" y="180">Deep Learning</text>
+            </g>
+
+            <!-- Node 4: -->
+            <g class="completed" AIML-node="4">
+                <circle class="AIML-circle" cx="700" cy="250" r="20" />
+                <text class="node-text-num" x="700" y="255">4</text>
+                <text class="node-text" x="700" y="180">Advanced Topics & AI Specializations</text>
+            </g>
+        </svg>
+    </div>
+
+    <div class="AIML-details" style="display: none;">
+        <!--Node 1-->
+        <div id="AIML-basic-list" class="lists">
+            <p style="font-size:18px;">Build strong basics in math, Python, and data handling for AIML.</p><br>
+            <h2>Mathematics:</h2>
+            <a href="https://www.w3schools.com/html/" target="_blank" class="detail-link">
+                <li>Linear Algebra (vectors, matrices, eigenvalues)</li>
+            </a>
+            <a href="https://www.w3schools.com/Css/" target="_blank" class="detail-link">
+                <li>Probability & Statistics (Bayes theorem, distributions, hypothesis testing)</li>
+            </a>
+            <a href="https://www.w3schools.com/js/" target="_blank" class="detail-link">
+                <li>Calculus (derivatives, partial derivatives, optimization)</li>
+            </a>
+
+
+            <h2>Programming Languages:</h2>
+            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+                <li>Python (NumPy, Pandas, Matplotlib, Scikit-learn)</li>
+            </a>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>R (optional, for statistical modeling)</li>
+            </a>
+
+            <h2>Data Handling</h2>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Data Cleaning, Preprocessing </li>
+            </a>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>SQL for structured data</li>
+            </a>
+
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Excel/Google Sheets basics</li>
+            </a>
+
+        </div>
+
+        <!--Node 2-->
+        <div id="ML-learn-list" class="lists">
+            <p style="font-size:18px;">Learn algorithms for prediction, classification, and clustering.</p><br>
+            <h2>Supervised Learning</h2>
+            <a href="https://www.w3schools.com/html/" target="_blank" class="detail-link">
+                <li>Regression (Linear, Logistic)</li>
+            </a>
+            <a href="https://www.w3schools.com/Css/" target="_blank" class="detail-link">
+                <li>Classification (Decision Trees, SVM, k-NN, Naive Bayes)</li>
+            </a>
+
+            <h2>Unsupervised Learning</h2>
+            <a href="https://www.w3schools.com/js/" target="_blank" class="detail-link">
+                <li>Clustering (k-Means, DBSCAN, Hierarchical)</li>
+            </a>
+            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+                <li>Dimensionality Reduction (PCA, t-SNE)</li>
+            </a>
+
+            <h2>Model Evaluation</h2>
+            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+                <li>Cross-validation, Confusion Matrix, ROC, Precision/Recall</li>
+            </a>
+
+            <h2>Tools/Frameworks</h2>
+            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+                <li>Scikit-learn</li>
+            </a>
+            <a href="https://www.w3schools.com/react/" target="_blank" class="detail-link">
+                <li>Jupyter Notebook</li>
+            </a>
+        </div>
+
+        <!--Node 3-->
+        <div id="Deep-learn-list" class="lists">
+            <p>Master neural networks, CNNs, RNNs, and transformers for complex AI tasks.</p>
+            <h2>Neural Networksh2>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>Perceptrons, Activation Functions</li>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>Backpropagation & Gradient Descent</li>
+                </a>
+
+                <h2>Frameworks</h2>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>TensorFlow</li>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>PyTorch</li>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>Keras</li>
+                </a>
+
+                <h2>Specialized Networks</h2>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>CNNs (Computer Vision – image classification, object detection) </li>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>RNNs, LSTMs, GRUs (Sequential data, NLP, time series)</li>
+                </a>
+                <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                    <li>Transformers (BERT, GPT models, attention mechanism)</li>
+                </a>
+
+        </div>
+
+        <!--Node 4-->
+        <div id="Advance-ML-list" class="lists">
+            <p style="font-size:18px;">Apply NLP, Computer Vision, Reinforcement Learning, and deploy real-world AI solutions.</p><br>
+            <h2>Natural Language Processing (NLP)</h2>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Text preprocessing, embeddings (Word2Vec, GloVe, BERT)</li>
+            </a>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Chatbots, Sentiment Analysis, Language Translation</li>
+            </a>
+
+            <h2>Computer vision</h2>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Image Classification, Object Detection, Image Segmentation</li>
+            </a>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>OpenCV, YOLO, Faster R-CNN</li>
+            </a>
+
+            <h2>Reinforcement Learning</h2>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Markov Decision Processes (MDP)</li>
+            </a>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Q-Learning, Deep Q-Networks (DQN)</li>
+            </a>
+
+            <h2>AI Tools</h2>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>Hugging Face Transformers</li>
+            </a>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>OpenAI APIs</li>
+            </a>
+            <a href="https://www.w3schools.com/bootstrap/" target="_blank" class="detail-link">
+                <li>MLflow (for ML pipelines)</li>
             </a>
         </div>
     </div>
