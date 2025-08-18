@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.addEventListener('click', function () {
             document.getElementsByClassName('video')[0].style.display = 'none';
             document.getElementsByClassName('container')[0].style.display = 'none';
+            document.getElementsByClassName('video')[1].style.display = 'none';
 
             backLink = document.getElementsByClassName('back-link')[index];
             backLink.addEventListener('click', function () {
@@ -17,9 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             else if (index === 1) {
                 document.getElementById('app-roadmap').style.display = 'block';
-                document.getElementsByClassName('container')[0].style.display = 'none';
+                document.getElementsByClassName('video')[1].style.display = 'block';
                 document.getElementsByClassName('app-video')[0].style.display = 'block';
-                // document.getElementById('web-roadmap').style.display = 'none';
                 // document.getElementsByClassName('details')[0].style.display = 'none';
                 
             }
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // alert("wait i will back");
                 document.getElementById('DataAnalysis-roadmap').style.display = 'block';
                 document.getElementById('web-roadmap').style.display = 'none';
+                // document.getElementsByClassName('app-video')[0].style.display = 'none';
                 
             }
 
